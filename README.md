@@ -32,7 +32,14 @@ You'll need to **link the include directories and libraries** in your C++ projec
 - **Include Directories:**  
   - `vcpkg\installed\x64-windows-static\include`  
 - **Library Directories:**  
-  - `vcpkg\installed\x64-windows-static\lib`  
+  - `vcpkg\installed\x64-windows-static\lib`
+# example of mine
+- Library Dir : ```C:\vcpkg\installed\x64-windows-static\lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)```
+- Include Dir :  ``` C:\vcpkg\installed\x64-windows-static\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)```
+- And Linker (Additional Dependecies) : ```Kernel32.lib;Advapi32.lib;C:\vcpkg\installed\x64-windows-static\lib\sqlite3.lib;C:\vcpkg\installed\x64-windows-static\lib\libsodium.lib```
+- Also Remove generating debug info if youre not skid you know what to do, this was just for skids
+- i advise to link mfc statically to get rid of !cl flag
+![image](https://github.com/user-attachments/assets/6c32e006-3a1a-4e5d-a427-319dc9cc69fd)
 
 ### 3️⃣ Replace Inputs with Your Own  
 
