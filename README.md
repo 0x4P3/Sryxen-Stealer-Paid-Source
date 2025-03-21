@@ -39,7 +39,7 @@ You'll need to **link the include directories and libraries** in your C++ projec
 - And Linker (Additional Dependecies) : ```Kernel32.lib;Advapi32.lib;C:\vcpkg\installed\x64-windows-static\lib\sqlite3.lib;C:\vcpkg\installed\x64-windows-static\lib\libsodium.lib```
 - Also Remove generating debug info if youre not skid you know what to do, this was just for skids
 - i advise to link mfc statically to get rid of !cl flag
-- btw make your own pem private + public 
+- btw make your own pem private + public + theres one for yall but ye
 ![image](https://github.com/user-attachments/assets/6c32e006-3a1a-4e5d-a427-319dc9cc69fd)
 
 ### 3️⃣ Replace Inputs with Your Own  
