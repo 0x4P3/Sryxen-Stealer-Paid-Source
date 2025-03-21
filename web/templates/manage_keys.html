@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Keys</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: #1f1f1f;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 0.8s ease;
+        }
+
+        .container h1 {
+            font-size: 28px;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .container h1::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #007bff;
+            margin: 8px auto 0;
+            border-radius: 2px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #cccccc;
+            margin-bottom: 8px;
+            display: block;
+            font-weight: 500;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 14px;
+            background: #2a2a2a;
+            color: #e0e0e0;
+            border: 1px solid #444444;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        input::placeholder {
+            color: #888;
+        }
+
+        input:focus, select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+        button {
+            background: #007bff;
+            color: #ffffff;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 123, 255, 0.5);
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .info {
+            font-size: 12px;
+            color: #aaaaaa;
+        }
+
+        .form-group i {
+            margin-right: 8px;
+            color: #888;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .container h1 {
+                font-size: 24px;
+            }
+
+            input, select, button {
+                font-size: 13px;
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" data-aos="fade-up">
+        <h1>Manage Keys</h1>
+        <form id="generateKeyForm">
+            <div class="form-group">
+                <label for="licenseMask"><i class="fas fa-key"></i> License Prefix:</label>
+                <input type="text" id="licenseMask" value="SRYXEN" placeholder="Enter prefix (e.g., SRYXEN)" />
+            </div>
+            <div class="form-group">
+                <label for="licenseNote"><i class="fas fa-sticky-note"></i> License Note:</label>
+                <input type="text" id="licenseNote" placeholder="Add a note (optional)" />
+            </div>
+            <div class="form-group">
+                <label for="duration"><i class="fas fa-clock"></i> License Duration:</label>
+                <select id="duration">
+                    <option value="1">1 Hour</option>
+                    <option value="24">1 Day</option>
+                    <option value="720">1 Month</option>
+                    <option value="2160">3 Months</option>
+                    <option value="4320">6 Months</option>
+                    <option value="6480">9 Months</option>
+                    <option value="8760">12 Months</option>
+                    <option value="99999">Lifetime</option>
+                </select>
+            </div>
+            <button type="submit"><i class="fas fa-plus"></i> Generate Key</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.getElementById('generateKeyForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const prefix = document.getElementById('licenseMask').value;
+            const note = document.getElementById('licenseNote').value;
+            const duration = parseInt(document.getElementById('duration').value, 10); // convert to int, keep this pls
+
+            const key = `${prefix}-${Math.random().toString(36).substr(2, 4).toUpperCase()}-${Math.random().toString(36).substr(2, 4).toUpperCase()}`;
+
+            fetch('/admin/generate', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ key, note, duration }),
+            })
+                .then((res) => res.json())
+                .then((data) => alert(`Key generated: ${data.key}`))
+                .catch((err) => console.error('Error:', err));
+        });
+    </script>
+</body>
+</html>

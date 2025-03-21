@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            width: 350px;
+            padding: 30px;
+            background: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 0.8s ease;
+        }
+
+        .login-container h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .login-container h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #007bff;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .login-container form {
+            margin-top: 20px;
+        }
+
+        .login-container .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px 40px;
+            font-size: 14px;
+            color: #e0e0e0;
+            background: #2a2a2a;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+
+        .login-container input::placeholder {
+            color: #888;
+        }
+
+        .login-container i {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #007bff;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container button:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .login-container button::before {
+            content: "\f090"; /* fontawesoomes icon unicode for fa-sign-in-alt */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 8px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .login-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .login-container h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container" data-aos="fade-up">
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
