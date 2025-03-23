@@ -12,27 +12,27 @@
 
 inline void RunAllAntiDebug() {
     if (NtGlobalFlag()) {
-        OutputDebugString(OBF(L"Killyourself you dumb bitch\n"));
+        OutputDebugString(OBF(L"detected\n"));
         exit(1);
     }
 
     if (IsDebuggerPresentAPI()) {
-        OutputDebugString(OBF(L"nigga kys\n"));
+        OutputDebugString(OBF(L"detected\n"));
         exit(1);
     }
 
     if (Interrupt_3()) {
-        OutputDebugString(OBF(L"kys bitch!\n"));
+        OutputDebugString(OBF(L"detected!\n"));
         exit(1);
     }
 
     if (IsDebuggerPresentPEB()) {
-        OutputDebugString(OBF(L"kys kys!\n"));
+        OutputDebugString(OBF(L"detected!\n"));
         exit(1);
     }
 
     if (UnhandledExcepFilterTest()) {
-        OutputDebugString(OBF(L"nigga rly debugging\n"));
+        OutputDebugString(OBF(L"detected\n"));
         exit(1);
     }
 
