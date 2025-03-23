@@ -7,7 +7,7 @@
 
 inline void RunAllAntiVM() {
     if (IsProcessRunning(OBF(L"sysmon.exe"))) {
-        OutputDebugStringW(OBF(L"really nigga?."));
+        OutputDebugStringW(OBF(L"really detected?."));
         exit(1);
     }
 
