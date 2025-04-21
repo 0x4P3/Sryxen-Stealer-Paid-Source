@@ -55,3 +55,7 @@ You'll need to **link the include directories and libraries** in your C++ projec
 Thank you all for the journey. Whether you fork, modify, or build upon this, I hope it serves you well.  
 
 Take care, and goodbye. 🚀
+
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
