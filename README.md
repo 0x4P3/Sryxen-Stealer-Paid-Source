@@ -4,12 +4,8 @@ This marks the end of my journey. Due to personal reasons, I’m stepping away f
 
 ---  
 
-## 🔥 Looking for a Better Version?  
-
-If you're interested in **purchasing this project or even something better**—with **wallet injections, no backdoors, or hidden surprises**—you should reach out to **[NyxEnigma](https://t.me/NyxEnigma)**.  
-
-He's an **awesome developer** and the right person to continue this work. Don't miss out on the chance to work with someone truly skilled!  
-
+## Telegram:
+- https://t.me/ebytelabs
 ---  
 
 ## 🛠️ How to Build This Project  
